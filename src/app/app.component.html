@@ -1,2 +1,29 @@
-Hello Angular 11
-<router-outlet></router-outlet>
+<div class="the-container">
+    <div class="menu-bar row">
+        <div class="col-md-4">
+            <a href="/home"><img src="../assets/images/logo.png"></a>
+        </div>
+        <div class="col-md-6">
+            <ul>
+                <li><a class="active" href="/home">Trang Chủ</a></li>
+                <li><a href="/product">Quần Áo</a></li>
+                <li><a href="/product">Giầy Dép</a></li>
+                <li><a href="/product">Phụ Kiện</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li><a href="/login" title="Đăng Nhập"><i class="fa fa-user fa-2x"></i></a></li>
+                <li><a href="/search" title="Tìm Kiếm"><i class="fa fa-search fa-2x"></i></a></li>
+                <li>
+                    <a href="/cart" title="Giỏ Hàng">
+                        <i class="fa fa-shopping-cart fa-2x"></i>
+                        <span class="items">99</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
