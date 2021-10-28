@@ -1,5 +1,56 @@
-.banner img {
+a {
+    text-decoration: none;
+    color: #00CC99;
+}
+
+.home .banner img {
     width: 100%;
     height: 700px;
     object-fit: cover;
+}
+
+.home .service {
+    height: 200px;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.home .service .info {
+    text-align: center;
+    color: #00CC99;
+}
+
+.new-product {
+    height: 650px;
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.new-product .sm-banner {
+    height: 250px;
+}
+
+.new-product .sm-banner img {
+    object-fit: cover;
+    height: 250px;
+}
+
+.lg-banner {
+    height: 400px;
+}
+
+.lg-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-label {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #777777;
+    color: #777777;
+    font-size: 20px;
 }
