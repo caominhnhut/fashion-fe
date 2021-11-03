@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProductComponent } from './components/product/product.component';
 import { HomeComponent } from './components/home/home.component';
+import { ClothingComponent } from './components/clothing/clothing.component';
+import { ClothingProductComponent } from './components/clothing/clothing-product/clothing-product.component';
+import { ClothingSidebarComponent } from './components/clothing/clothing-sidebar/clothing-sidebar.component';
+import { ShoesComponent } from './components/shoes/shoes.component';
+import { ShoesSidebarComponent } from './components/shoes/shoes-sidebar/shoes-sidebar.component';
+import { ShoesProductComponent } from './components/shoes/shoes-product/shoes-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    HomeComponent
+    HomeComponent,
+    ClothingComponent,
+    ClothingProductComponent,
+    ClothingSidebarComponent,
+    ShoesComponent,
+    ShoesSidebarComponent,
+    ShoesProductComponent
   ],
   imports: [
     BrowserModule,
