@@ -5,6 +5,7 @@ import { ClothingComponent } from './components/clothing/clothing.component';
 import { ClothingProductComponent } from './components/clothing/clothing-product/clothing-product.component';
 import { ShoesComponent } from './components/shoes/shoes.component';
 import { ShoesProductComponent } from './components/shoes/shoes-product/shoes-product.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
     component: ShoesComponent,
     children: [{ path: ":id",  component: ShoesProductComponent}]
   },
+  { path: 'product/:id', component: ProductDetailComponent },
   { path: "**", redirectTo:"home" }
 ]
 
