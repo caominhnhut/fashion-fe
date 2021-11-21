@@ -40,21 +40,23 @@ a {
 }
 
 .new-product {
-    height: 750px;
     padding-top: 30px;
     width: 80%;
     margin: auto;
 }
 
 .new-product .sm-banner {
-    height: 250px;
     position: relative;
 }
 
 .new-product .sm-banner img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 330px;
+}
+
+.new-product .sm-banner-top {
+    height: 350px;
 }
 
 .overlay {
@@ -91,7 +93,6 @@ a {
 }
 
 .lg-banner {
-    height: 400px;
     position: relative;
 }
 

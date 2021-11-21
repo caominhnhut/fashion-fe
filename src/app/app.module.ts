@@ -11,6 +11,7 @@ import { ShoesComponent } from './components/shoes/shoes.component';
 import { ShoesSidebarComponent } from './components/shoes/shoes-sidebar/shoes-sidebar.component';
 import { ShoesProductComponent } from './components/shoes/shoes-product/shoes-product.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     ShoesComponent,
     ShoesSidebarComponent,
     ShoesProductComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
