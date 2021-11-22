@@ -12,6 +12,10 @@ import { ShoesSidebarComponent } from './components/shoes/shoes-sidebar/shoes-si
 import { ShoesProductComponent } from './components/shoes/shoes-product/shoes-product.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { SearchingComponent } from './components/searching/searching.component';
+import { AuthenticationComponent } from './components/authentication/authentication.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AccountRegisterComponent } from './components/account-register/account-register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     ShoesSidebarComponent,
     ShoesProductComponent,
     ProductDetailComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    SearchingComponent,
+    AuthenticationComponent,
+    AdminComponent,
+    AccountRegisterComponent
   ],
   imports: [
     BrowserModule,

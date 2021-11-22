@@ -7,6 +7,10 @@ import { ShoesComponent } from './components/shoes/shoes.component';
 import { ShoesProductComponent } from './components/shoes/shoes-product/shoes-product.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { SearchingComponent } from './components/searching/searching.component';
+import { AuthenticationComponent } from './components/authentication/authentication.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AccountRegisterComponent } from './components/account-register/account-register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,6 +27,10 @@ const routes: Routes = [
   },
   { path: 'product/:id', component: ProductDetailComponent },
   { path: 'shopping-cart', component: ShoppingCartComponent },
+  { path: 'searching', component: SearchingComponent },
+  { path: 'login', component: AuthenticationComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'account-register', component: AccountRegisterComponent },
   { path: "**", redirectTo:"home" }
 ]
 
