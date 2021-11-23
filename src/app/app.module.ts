@@ -18,6 +18,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AccountRegisterComponent } from './components/account-register/account-register.component';
 import { AdminSidebarComponent } from './components/admin/admin-sidebar/admin-sidebar.component';
 import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
+import { AdminAddingCategoryComponent } from './components/admin/admin-adding-category/admin-adding-category.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AdminConsoleComponent } from './components/admin/admin-console/admin-co
     AdminComponent,
     AccountRegisterComponent,
     AdminSidebarComponent,
-    AdminConsoleComponent
+    AdminConsoleComponent,
+    AdminAddingCategoryComponent
   ],
   imports: [
     BrowserModule,

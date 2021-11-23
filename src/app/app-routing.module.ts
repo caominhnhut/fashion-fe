@@ -12,6 +12,7 @@ import { AuthenticationComponent } from './components/authentication/authenticat
 import { AdminComponent } from './components/admin/admin.component';
 import { AccountRegisterComponent } from './components/account-register/account-register.component';
 import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
+import { AdminAddingCategoryComponent } from './components/admin/admin-adding-category/admin-adding-category.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -33,7 +34,10 @@ const routes: Routes = [
   { 
     path: 'admin',
     component: AdminComponent,
-    children: [{ path: ":id",  component: AdminConsoleComponent}]
+    children: [
+      { path: ":id",  component: AdminConsoleComponent},
+      { path: ":id/add-category",  component: AdminAddingCategoryComponent}
+    ]
   },
   { path: 'account-register', component: AccountRegisterComponent },
   { path: "**", redirectTo:"home" }
