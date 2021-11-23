@@ -16,6 +16,8 @@ import { SearchingComponent } from './components/searching/searching.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AccountRegisterComponent } from './components/account-register/account-register.component';
+import { AdminSidebarComponent } from './components/admin/admin-sidebar/admin-sidebar.component';
+import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { AccountRegisterComponent } from './components/account-register/account-
     SearchingComponent,
     AuthenticationComponent,
     AdminComponent,
-    AccountRegisterComponent
+    AccountRegisterComponent,
+    AdminSidebarComponent,
+    AdminConsoleComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { SearchingComponent } from './components/searching/searching.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AccountRegisterComponent } from './components/account-register/account-register.component';
+import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,7 +30,11 @@ const routes: Routes = [
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: 'searching', component: SearchingComponent },
   { path: 'login', component: AuthenticationComponent },
-  { path: 'admin', component: AdminComponent },
+  { 
+    path: 'admin',
+    component: AdminComponent,
+    children: [{ path: ":id",  component: AdminConsoleComponent}]
+  },
   { path: 'account-register', component: AccountRegisterComponent },
   { path: "**", redirectTo:"home" }
 ]
