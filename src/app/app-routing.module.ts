@@ -13,6 +13,8 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AccountRegisterComponent } from './components/account-register/account-register.component';
 import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
 import { AdminAddingCategoryComponent } from './components/admin/admin-adding-category/admin-adding-category.component';
+import { AdminAddingProductCategoryComponent } from './components/admin/admin-adding-product-category/admin-adding-product-category.component';
+import { AdminAddingProductComponent } from './components/admin/admin-adding-product/admin-adding-product.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -36,7 +38,9 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       { path: ":id",  component: AdminConsoleComponent},
-      { path: ":id/add-category",  component: AdminAddingCategoryComponent}
+      { path: ":id/add-category",  component: AdminAddingCategoryComponent},
+      { path: ":id/add-product-category",  component: AdminAddingProductCategoryComponent},
+      { path: ":id/add-product",  component: AdminAddingProductComponent}
     ]
   },
   { path: 'account-register', component: AccountRegisterComponent },

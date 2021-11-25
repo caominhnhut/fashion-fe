@@ -19,6 +19,8 @@ import { AccountRegisterComponent } from './components/account-register/account-
 import { AdminSidebarComponent } from './components/admin/admin-sidebar/admin-sidebar.component';
 import { AdminConsoleComponent } from './components/admin/admin-console/admin-console.component';
 import { AdminAddingCategoryComponent } from './components/admin/admin-adding-category/admin-adding-category.component';
+import { AdminAddingProductCategoryComponent } from './components/admin/admin-adding-product-category/admin-adding-product-category.component';
+import { AdminAddingProductComponent } from './components/admin/admin-adding-product/admin-adding-product.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AdminAddingCategoryComponent } from './components/admin/admin-adding-ca
     AccountRegisterComponent,
     AdminSidebarComponent,
     AdminConsoleComponent,
-    AdminAddingCategoryComponent
+    AdminAddingCategoryComponent,
+    AdminAddingProductCategoryComponent,
+    AdminAddingProductComponent
   ],
   imports: [
     BrowserModule,

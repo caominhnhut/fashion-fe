@@ -15,3 +15,12 @@ input[type=text] {
 .btn-info {
     color: white;
 }
+
+select {
+    width: 30%;
+    height: 40px;
+    border: 1px solid #aaaaaa;
+    outline: none;
+    padding-left: 10px;
+    color: #777777;
+}
